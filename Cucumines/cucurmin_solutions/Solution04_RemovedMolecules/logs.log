@@ -1,0 +1,1384 @@
+2024-08-26 00:01:19,902:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-08-26 00:01:19,902:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-08-26 00:01:19,902:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-08-26 00:01:19,902:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-08-26 00:03:28,173:INFO:PyCaret RegressionExperiment
+2024-08-26 00:03:28,173:INFO:Logging name: reg-default-name
+2024-08-26 00:03:28,173:INFO:ML Usecase: MLUsecase.REGRESSION
+2024-08-26 00:03:28,176:INFO:version 3.3.2
+2024-08-26 00:03:28,176:INFO:Initializing setup()
+2024-08-26 00:03:28,176:INFO:self.USI: 25e0
+2024-08-26 00:03:28,176:INFO:self._variable_keys: {'target_param', 'y_train', 'n_jobs_param', 'exp_id', 'log_plots_param', 'seed', 'fold_groups_param', '_ml_usecase', 'gpu_n_jobs_param', 'y_test', 'X', 'html_param', 'pipeline', 'logging_param', 'X_test', 'fold_shuffle_param', 'y', 'idx', 'X_train', 'transform_target_param', '_available_plots', 'exp_name_log', 'data', 'fold_generator', 'gpu_param', 'memory', 'USI'}
+2024-08-26 00:03:28,176:INFO:Checking environment
+2024-08-26 00:03:28,176:INFO:python_version: 3.11.5
+2024-08-26 00:03:28,176:INFO:python_build: ('tags/v3.11.5:cce6ba9', 'Aug 24 2023 14:38:34')
+2024-08-26 00:03:28,177:INFO:machine: AMD64
+2024-08-26 00:03:28,177:INFO:platform: Windows-10-10.0.22631-SP0
+2024-08-26 00:03:28,182:INFO:Memory: svmem(total=16347844608, available=4030291968, percent=75.3, used=12317552640, free=4030291968)
+2024-08-26 00:03:28,182:INFO:Physical Core: 8
+2024-08-26 00:03:28,182:INFO:Logical Core: 16
+2024-08-26 00:03:28,182:INFO:Checking libraries
+2024-08-26 00:03:28,182:INFO:System:
+2024-08-26 00:03:28,182:INFO:    python: 3.11.5 (tags/v3.11.5:cce6ba9, Aug 24 2023, 14:38:34) [MSC v.1936 64 bit (AMD64)]
+2024-08-26 00:03:28,182:INFO:executable: c:\Users\Chamod Peiris\Documents\GitHub\Projects_24\Cucumines\.venv\Scripts\python.exe
+2024-08-26 00:03:28,182:INFO:   machine: Windows-10-10.0.22631-SP0
+2024-08-26 00:03:28,182:INFO:PyCaret required dependencies:
+2024-08-26 00:03:29,003:INFO:                 pip: 24.2
+2024-08-26 00:03:29,003:INFO:          setuptools: 65.5.0
+2024-08-26 00:03:29,003:INFO:             pycaret: 3.3.2
+2024-08-26 00:03:29,003:INFO:             IPython: 8.26.0
+2024-08-26 00:03:29,003:INFO:          ipywidgets: 8.1.5
+2024-08-26 00:03:29,003:INFO:                tqdm: 4.66.5
+2024-08-26 00:03:29,003:INFO:               numpy: 1.26.4
+2024-08-26 00:03:29,003:INFO:              pandas: 2.1.4
+2024-08-26 00:03:29,003:INFO:              jinja2: 3.1.4
+2024-08-26 00:03:29,003:INFO:               scipy: 1.11.4
+2024-08-26 00:03:29,003:INFO:              joblib: 1.3.2
+2024-08-26 00:03:29,003:INFO:             sklearn: 1.4.2
+2024-08-26 00:03:29,003:INFO:                pyod: 2.0.1
+2024-08-26 00:03:29,003:INFO:            imblearn: 0.12.3
+2024-08-26 00:03:29,003:INFO:   category_encoders: 2.6.3
+2024-08-26 00:03:29,003:INFO:            lightgbm: 4.5.0
+2024-08-26 00:03:29,003:INFO:               numba: 0.60.0
+2024-08-26 00:03:29,003:INFO:            requests: 2.32.3
+2024-08-26 00:03:29,003:INFO:          matplotlib: 3.7.5
+2024-08-26 00:03:29,003:INFO:          scikitplot: 0.3.7
+2024-08-26 00:03:29,003:INFO:         yellowbrick: 1.5
+2024-08-26 00:03:29,003:INFO:              plotly: 5.23.0
+2024-08-26 00:03:29,003:INFO:    plotly-resampler: Not installed
+2024-08-26 00:03:29,003:INFO:             kaleido: 0.2.1
+2024-08-26 00:03:29,003:INFO:           schemdraw: 0.15
+2024-08-26 00:03:29,003:INFO:         statsmodels: 0.14.2
+2024-08-26 00:03:29,003:INFO:              sktime: 0.26.0
+2024-08-26 00:03:29,003:INFO:               tbats: 1.1.3
+2024-08-26 00:03:29,003:INFO:            pmdarima: 2.0.4
+2024-08-26 00:03:29,003:INFO:              psutil: 6.0.0
+2024-08-26 00:03:29,004:INFO:          markupsafe: 2.1.5
+2024-08-26 00:03:29,004:INFO:             pickle5: Not installed
+2024-08-26 00:03:29,004:INFO:         cloudpickle: 3.0.0
+2024-08-26 00:03:29,004:INFO:         deprecation: 2.1.0
+2024-08-26 00:03:29,004:INFO:              xxhash: 3.5.0
+2024-08-26 00:03:29,004:INFO:           wurlitzer: Not installed
+2024-08-26 00:03:29,004:INFO:PyCaret optional dependencies:
+2024-08-26 00:03:29,011:INFO:                shap: Not installed
+2024-08-26 00:03:29,011:INFO:           interpret: Not installed
+2024-08-26 00:03:29,011:INFO:                umap: Not installed
+2024-08-26 00:03:29,011:INFO:     ydata_profiling: Not installed
+2024-08-26 00:03:29,011:INFO:  explainerdashboard: Not installed
+2024-08-26 00:03:29,011:INFO:             autoviz: Not installed
+2024-08-26 00:03:29,011:INFO:           fairlearn: Not installed
+2024-08-26 00:03:29,011:INFO:          deepchecks: Not installed
+2024-08-26 00:03:29,011:INFO:             xgboost: Not installed
+2024-08-26 00:03:29,011:INFO:            catboost: Not installed
+2024-08-26 00:03:29,011:INFO:              kmodes: Not installed
+2024-08-26 00:03:29,011:INFO:             mlxtend: Not installed
+2024-08-26 00:03:29,011:INFO:       statsforecast: Not installed
+2024-08-26 00:03:29,011:INFO:        tune_sklearn: Not installed
+2024-08-26 00:03:29,011:INFO:                 ray: Not installed
+2024-08-26 00:03:29,011:INFO:            hyperopt: Not installed
+2024-08-26 00:03:29,011:INFO:              optuna: Not installed
+2024-08-26 00:03:29,011:INFO:               skopt: Not installed
+2024-08-26 00:03:29,011:INFO:              mlflow: Not installed
+2024-08-26 00:03:29,011:INFO:              gradio: Not installed
+2024-08-26 00:03:29,011:INFO:             fastapi: Not installed
+2024-08-26 00:03:29,011:INFO:             uvicorn: Not installed
+2024-08-26 00:03:29,011:INFO:              m2cgen: Not installed
+2024-08-26 00:03:29,011:INFO:           evidently: Not installed
+2024-08-26 00:03:29,011:INFO:               fugue: Not installed
+2024-08-26 00:03:29,011:INFO:           streamlit: Not installed
+2024-08-26 00:03:29,011:INFO:             prophet: Not installed
+2024-08-26 00:03:29,011:INFO:None
+2024-08-26 00:03:29,011:INFO:Set up data.
+2024-08-26 00:03:45,704:INFO:PyCaret RegressionExperiment
+2024-08-26 00:03:45,704:INFO:Logging name: reg-default-name
+2024-08-26 00:03:45,704:INFO:ML Usecase: MLUsecase.REGRESSION
+2024-08-26 00:03:45,704:INFO:version 3.3.2
+2024-08-26 00:03:45,704:INFO:Initializing setup()
+2024-08-26 00:03:45,704:INFO:self.USI: 0830
+2024-08-26 00:03:45,704:INFO:self._variable_keys: {'target_param', 'y_train', 'n_jobs_param', 'exp_id', 'log_plots_param', 'seed', 'fold_groups_param', '_ml_usecase', 'gpu_n_jobs_param', 'y_test', 'X', 'html_param', 'pipeline', 'logging_param', 'X_test', 'fold_shuffle_param', 'y', 'idx', 'X_train', 'transform_target_param', '_available_plots', 'exp_name_log', 'data', 'fold_generator', 'gpu_param', 'memory', 'USI'}
+2024-08-26 00:03:45,704:INFO:Checking environment
+2024-08-26 00:03:45,704:INFO:python_version: 3.11.5
+2024-08-26 00:03:45,704:INFO:python_build: ('tags/v3.11.5:cce6ba9', 'Aug 24 2023 14:38:34')
+2024-08-26 00:03:45,704:INFO:machine: AMD64
+2024-08-26 00:03:45,704:INFO:platform: Windows-10-10.0.22631-SP0
+2024-08-26 00:03:45,709:INFO:Memory: svmem(total=16347844608, available=3926962176, percent=76.0, used=12420882432, free=3926962176)
+2024-08-26 00:03:45,710:INFO:Physical Core: 8
+2024-08-26 00:03:45,710:INFO:Logical Core: 16
+2024-08-26 00:03:45,710:INFO:Checking libraries
+2024-08-26 00:03:45,710:INFO:System:
+2024-08-26 00:03:45,710:INFO:    python: 3.11.5 (tags/v3.11.5:cce6ba9, Aug 24 2023, 14:38:34) [MSC v.1936 64 bit (AMD64)]
+2024-08-26 00:03:45,710:INFO:executable: c:\Users\Chamod Peiris\Documents\GitHub\Projects_24\Cucumines\.venv\Scripts\python.exe
+2024-08-26 00:03:45,710:INFO:   machine: Windows-10-10.0.22631-SP0
+2024-08-26 00:03:45,710:INFO:PyCaret required dependencies:
+2024-08-26 00:03:45,710:INFO:                 pip: 24.2
+2024-08-26 00:03:45,710:INFO:          setuptools: 65.5.0
+2024-08-26 00:03:45,710:INFO:             pycaret: 3.3.2
+2024-08-26 00:03:45,710:INFO:             IPython: 8.26.0
+2024-08-26 00:03:45,710:INFO:          ipywidgets: 8.1.5
+2024-08-26 00:03:45,710:INFO:                tqdm: 4.66.5
+2024-08-26 00:03:45,710:INFO:               numpy: 1.26.4
+2024-08-26 00:03:45,710:INFO:              pandas: 2.1.4
+2024-08-26 00:03:45,710:INFO:              jinja2: 3.1.4
+2024-08-26 00:03:45,710:INFO:               scipy: 1.11.4
+2024-08-26 00:03:45,710:INFO:              joblib: 1.3.2
+2024-08-26 00:03:45,710:INFO:             sklearn: 1.4.2
+2024-08-26 00:03:45,710:INFO:                pyod: 2.0.1
+2024-08-26 00:03:45,710:INFO:            imblearn: 0.12.3
+2024-08-26 00:03:45,710:INFO:   category_encoders: 2.6.3
+2024-08-26 00:03:45,710:INFO:            lightgbm: 4.5.0
+2024-08-26 00:03:45,710:INFO:               numba: 0.60.0
+2024-08-26 00:03:45,710:INFO:            requests: 2.32.3
+2024-08-26 00:03:45,710:INFO:          matplotlib: 3.7.5
+2024-08-26 00:03:45,710:INFO:          scikitplot: 0.3.7
+2024-08-26 00:03:45,710:INFO:         yellowbrick: 1.5
+2024-08-26 00:03:45,710:INFO:              plotly: 5.23.0
+2024-08-26 00:03:45,710:INFO:    plotly-resampler: Not installed
+2024-08-26 00:03:45,710:INFO:             kaleido: 0.2.1
+2024-08-26 00:03:45,710:INFO:           schemdraw: 0.15
+2024-08-26 00:03:45,710:INFO:         statsmodels: 0.14.2
+2024-08-26 00:03:45,710:INFO:              sktime: 0.26.0
+2024-08-26 00:03:45,710:INFO:               tbats: 1.1.3
+2024-08-26 00:03:45,710:INFO:            pmdarima: 2.0.4
+2024-08-26 00:03:45,710:INFO:              psutil: 6.0.0
+2024-08-26 00:03:45,710:INFO:          markupsafe: 2.1.5
+2024-08-26 00:03:45,710:INFO:             pickle5: Not installed
+2024-08-26 00:03:45,710:INFO:         cloudpickle: 3.0.0
+2024-08-26 00:03:45,710:INFO:         deprecation: 2.1.0
+2024-08-26 00:03:45,710:INFO:              xxhash: 3.5.0
+2024-08-26 00:03:45,710:INFO:           wurlitzer: Not installed
+2024-08-26 00:03:45,710:INFO:PyCaret optional dependencies:
+2024-08-26 00:03:45,710:INFO:                shap: Not installed
+2024-08-26 00:03:45,710:INFO:           interpret: Not installed
+2024-08-26 00:03:45,710:INFO:                umap: Not installed
+2024-08-26 00:03:45,710:INFO:     ydata_profiling: Not installed
+2024-08-26 00:03:45,710:INFO:  explainerdashboard: Not installed
+2024-08-26 00:03:45,710:INFO:             autoviz: Not installed
+2024-08-26 00:03:45,710:INFO:           fairlearn: Not installed
+2024-08-26 00:03:45,710:INFO:          deepchecks: Not installed
+2024-08-26 00:03:45,710:INFO:             xgboost: Not installed
+2024-08-26 00:03:45,710:INFO:            catboost: Not installed
+2024-08-26 00:03:45,710:INFO:              kmodes: Not installed
+2024-08-26 00:03:45,710:INFO:             mlxtend: Not installed
+2024-08-26 00:03:45,710:INFO:       statsforecast: Not installed
+2024-08-26 00:03:45,710:INFO:        tune_sklearn: Not installed
+2024-08-26 00:03:45,710:INFO:                 ray: Not installed
+2024-08-26 00:03:45,710:INFO:            hyperopt: Not installed
+2024-08-26 00:03:45,710:INFO:              optuna: Not installed
+2024-08-26 00:03:45,710:INFO:               skopt: Not installed
+2024-08-26 00:03:45,710:INFO:              mlflow: Not installed
+2024-08-26 00:03:45,711:INFO:              gradio: Not installed
+2024-08-26 00:03:45,711:INFO:             fastapi: Not installed
+2024-08-26 00:03:45,711:INFO:             uvicorn: Not installed
+2024-08-26 00:03:45,711:INFO:              m2cgen: Not installed
+2024-08-26 00:03:45,711:INFO:           evidently: Not installed
+2024-08-26 00:03:45,711:INFO:               fugue: Not installed
+2024-08-26 00:03:45,711:INFO:           streamlit: Not installed
+2024-08-26 00:03:45,711:INFO:             prophet: Not installed
+2024-08-26 00:03:45,711:INFO:None
+2024-08-26 00:03:45,711:INFO:Set up data.
+2024-08-26 00:03:45,715:INFO:Set up folding strategy.
+2024-08-26 00:03:45,715:INFO:Set up train/test split.
+2024-08-26 00:03:46,072:INFO:Set up index.
+2024-08-26 00:03:46,072:INFO:Assigning column types.
+2024-08-26 00:03:46,074:INFO:Engine successfully changes for model 'lr' to 'sklearn'.
+2024-08-26 00:03:46,074:INFO:Engine for model 'lasso' has not been set explicitly, hence returning None.
+2024-08-26 00:03:46,078:INFO:Engine for model 'ridge' has not been set explicitly, hence returning None.
+2024-08-26 00:03:46,081:INFO:Engine for model 'en' has not been set explicitly, hence returning None.
+2024-08-26 00:03:46,118:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2024-08-26 00:03:46,145:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2024-08-26 00:03:46,146:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-08-26 00:03:46,146:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-08-26 00:03:46,147:INFO:Engine for model 'lasso' has not been set explicitly, hence returning None.
+2024-08-26 00:03:46,149:INFO:Engine for model 'ridge' has not been set explicitly, hence returning None.
+2024-08-26 00:03:46,152:INFO:Engine for model 'en' has not been set explicitly, hence returning None.
+2024-08-26 00:03:46,188:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2024-08-26 00:03:46,218:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2024-08-26 00:03:46,219:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-08-26 00:03:46,219:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-08-26 00:03:46,219:INFO:Engine successfully changes for model 'lasso' to 'sklearn'.
+2024-08-26 00:03:46,222:INFO:Engine for model 'ridge' has not been set explicitly, hence returning None.
+2024-08-26 00:03:46,224:INFO:Engine for model 'en' has not been set explicitly, hence returning None.
+2024-08-26 00:03:46,263:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2024-08-26 00:03:46,290:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2024-08-26 00:03:46,290:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-08-26 00:03:46,290:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-08-26 00:03:46,294:INFO:Engine for model 'ridge' has not been set explicitly, hence returning None.
+2024-08-26 00:03:46,297:INFO:Engine for model 'en' has not been set explicitly, hence returning None.
+2024-08-26 00:03:46,332:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2024-08-26 00:03:46,361:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2024-08-26 00:03:46,361:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-08-26 00:03:46,361:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-08-26 00:03:46,362:INFO:Engine successfully changes for model 'ridge' to 'sklearn'.
+2024-08-26 00:03:46,368:INFO:Engine for model 'en' has not been set explicitly, hence returning None.
+2024-08-26 00:03:46,403:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2024-08-26 00:03:46,430:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2024-08-26 00:03:46,431:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-08-26 00:03:46,431:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-08-26 00:03:46,436:INFO:Engine for model 'en' has not been set explicitly, hence returning None.
+2024-08-26 00:03:46,473:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2024-08-26 00:03:46,502:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2024-08-26 00:03:46,502:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-08-26 00:03:46,502:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-08-26 00:03:46,502:INFO:Engine successfully changes for model 'en' to 'sklearn'.
+2024-08-26 00:03:46,543:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2024-08-26 00:03:46,572:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2024-08-26 00:03:46,573:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-08-26 00:03:46,573:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-08-26 00:03:46,615:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2024-08-26 00:03:46,643:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2024-08-26 00:03:46,644:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-08-26 00:03:46,644:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-08-26 00:03:46,644:INFO:Engine successfully changes for model 'knn' to 'sklearn'.
+2024-08-26 00:03:46,687:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2024-08-26 00:03:46,716:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-08-26 00:03:46,716:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-08-26 00:03:46,756:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2024-08-26 00:03:46,791:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-08-26 00:03:46,791:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-08-26 00:03:46,791:INFO:Engine successfully changes for model 'svm' to 'sklearn'.
+2024-08-26 00:03:46,859:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-08-26 00:03:46,859:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-08-26 00:03:46,931:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-08-26 00:03:46,931:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-08-26 00:03:46,933:INFO:Preparing preprocessing pipeline...
+2024-08-26 00:03:46,933:INFO:Set up simple imputation.
+2024-08-26 00:03:46,935:INFO:Set up encoding of categorical features.
+2024-08-26 00:03:46,935:INFO:Set up column name cleaning.
+2024-08-26 00:05:23,458:INFO:PyCaret RegressionExperiment
+2024-08-26 00:05:23,458:INFO:Logging name: reg-default-name
+2024-08-26 00:05:23,459:INFO:ML Usecase: MLUsecase.REGRESSION
+2024-08-26 00:05:23,459:INFO:version 3.3.2
+2024-08-26 00:05:23,459:INFO:Initializing setup()
+2024-08-26 00:05:23,459:INFO:self.USI: ab70
+2024-08-26 00:05:23,459:INFO:self._variable_keys: {'target_param', 'y_train', 'n_jobs_param', 'exp_id', 'log_plots_param', 'seed', 'fold_groups_param', '_ml_usecase', 'gpu_n_jobs_param', 'y_test', 'X', 'html_param', 'pipeline', 'logging_param', 'X_test', 'fold_shuffle_param', 'y', 'idx', 'X_train', 'transform_target_param', '_available_plots', 'exp_name_log', 'data', 'fold_generator', 'gpu_param', 'memory', 'USI'}
+2024-08-26 00:05:23,459:INFO:Checking environment
+2024-08-26 00:05:23,459:INFO:python_version: 3.11.5
+2024-08-26 00:05:23,459:INFO:python_build: ('tags/v3.11.5:cce6ba9', 'Aug 24 2023 14:38:34')
+2024-08-26 00:05:23,459:INFO:machine: AMD64
+2024-08-26 00:05:23,459:INFO:platform: Windows-10-10.0.22631-SP0
+2024-08-26 00:05:23,462:INFO:Memory: svmem(total=16347844608, available=4028452864, percent=75.4, used=12319391744, free=4028452864)
+2024-08-26 00:05:23,462:INFO:Physical Core: 8
+2024-08-26 00:05:23,462:INFO:Logical Core: 16
+2024-08-26 00:05:23,462:INFO:Checking libraries
+2024-08-26 00:05:23,462:INFO:System:
+2024-08-26 00:05:23,462:INFO:    python: 3.11.5 (tags/v3.11.5:cce6ba9, Aug 24 2023, 14:38:34) [MSC v.1936 64 bit (AMD64)]
+2024-08-26 00:05:23,462:INFO:executable: c:\Users\Chamod Peiris\Documents\GitHub\Projects_24\Cucumines\.venv\Scripts\python.exe
+2024-08-26 00:05:23,462:INFO:   machine: Windows-10-10.0.22631-SP0
+2024-08-26 00:05:23,464:INFO:PyCaret required dependencies:
+2024-08-26 00:05:23,464:INFO:                 pip: 24.2
+2024-08-26 00:05:23,464:INFO:          setuptools: 65.5.0
+2024-08-26 00:05:23,464:INFO:             pycaret: 3.3.2
+2024-08-26 00:05:23,464:INFO:             IPython: 8.26.0
+2024-08-26 00:05:23,464:INFO:          ipywidgets: 8.1.5
+2024-08-26 00:05:23,464:INFO:                tqdm: 4.66.5
+2024-08-26 00:05:23,464:INFO:               numpy: 1.26.4
+2024-08-26 00:05:23,464:INFO:              pandas: 2.1.4
+2024-08-26 00:05:23,464:INFO:              jinja2: 3.1.4
+2024-08-26 00:05:23,464:INFO:               scipy: 1.11.4
+2024-08-26 00:05:23,464:INFO:              joblib: 1.3.2
+2024-08-26 00:05:23,464:INFO:             sklearn: 1.4.2
+2024-08-26 00:05:23,464:INFO:                pyod: 2.0.1
+2024-08-26 00:05:23,464:INFO:            imblearn: 0.12.3
+2024-08-26 00:05:23,464:INFO:   category_encoders: 2.6.3
+2024-08-26 00:05:23,464:INFO:            lightgbm: 4.5.0
+2024-08-26 00:05:23,464:INFO:               numba: 0.60.0
+2024-08-26 00:05:23,464:INFO:            requests: 2.32.3
+2024-08-26 00:05:23,464:INFO:          matplotlib: 3.7.5
+2024-08-26 00:05:23,464:INFO:          scikitplot: 0.3.7
+2024-08-26 00:05:23,464:INFO:         yellowbrick: 1.5
+2024-08-26 00:05:23,464:INFO:              plotly: 5.23.0
+2024-08-26 00:05:23,464:INFO:    plotly-resampler: Not installed
+2024-08-26 00:05:23,464:INFO:             kaleido: 0.2.1
+2024-08-26 00:05:23,464:INFO:           schemdraw: 0.15
+2024-08-26 00:05:23,464:INFO:         statsmodels: 0.14.2
+2024-08-26 00:05:23,464:INFO:              sktime: 0.26.0
+2024-08-26 00:05:23,464:INFO:               tbats: 1.1.3
+2024-08-26 00:05:23,464:INFO:            pmdarima: 2.0.4
+2024-08-26 00:05:23,464:INFO:              psutil: 6.0.0
+2024-08-26 00:05:23,464:INFO:          markupsafe: 2.1.5
+2024-08-26 00:05:23,464:INFO:             pickle5: Not installed
+2024-08-26 00:05:23,464:INFO:         cloudpickle: 3.0.0
+2024-08-26 00:05:23,464:INFO:         deprecation: 2.1.0
+2024-08-26 00:05:23,464:INFO:              xxhash: 3.5.0
+2024-08-26 00:05:23,464:INFO:           wurlitzer: Not installed
+2024-08-26 00:05:23,464:INFO:PyCaret optional dependencies:
+2024-08-26 00:05:23,464:INFO:                shap: Not installed
+2024-08-26 00:05:23,464:INFO:           interpret: Not installed
+2024-08-26 00:05:23,464:INFO:                umap: Not installed
+2024-08-26 00:05:23,464:INFO:     ydata_profiling: Not installed
+2024-08-26 00:05:23,464:INFO:  explainerdashboard: Not installed
+2024-08-26 00:05:23,464:INFO:             autoviz: Not installed
+2024-08-26 00:05:23,464:INFO:           fairlearn: Not installed
+2024-08-26 00:05:23,464:INFO:          deepchecks: Not installed
+2024-08-26 00:05:23,464:INFO:             xgboost: Not installed
+2024-08-26 00:05:23,464:INFO:            catboost: Not installed
+2024-08-26 00:05:23,464:INFO:              kmodes: Not installed
+2024-08-26 00:05:23,464:INFO:             mlxtend: Not installed
+2024-08-26 00:05:23,464:INFO:       statsforecast: Not installed
+2024-08-26 00:05:23,464:INFO:        tune_sklearn: Not installed
+2024-08-26 00:05:23,464:INFO:                 ray: Not installed
+2024-08-26 00:05:23,464:INFO:            hyperopt: Not installed
+2024-08-26 00:05:23,464:INFO:              optuna: Not installed
+2024-08-26 00:05:23,464:INFO:               skopt: Not installed
+2024-08-26 00:05:23,464:INFO:              mlflow: Not installed
+2024-08-26 00:05:23,465:INFO:              gradio: Not installed
+2024-08-26 00:05:23,465:INFO:             fastapi: Not installed
+2024-08-26 00:05:23,465:INFO:             uvicorn: Not installed
+2024-08-26 00:05:23,465:INFO:              m2cgen: Not installed
+2024-08-26 00:05:23,465:INFO:           evidently: Not installed
+2024-08-26 00:05:23,465:INFO:               fugue: Not installed
+2024-08-26 00:05:23,465:INFO:           streamlit: Not installed
+2024-08-26 00:05:23,465:INFO:             prophet: Not installed
+2024-08-26 00:05:23,465:INFO:None
+2024-08-26 00:05:23,465:INFO:Set up data.
+2024-08-26 00:05:23,467:INFO:Set up folding strategy.
+2024-08-26 00:05:23,467:INFO:Set up train/test split.
+2024-08-26 00:05:23,470:INFO:Set up index.
+2024-08-26 00:05:23,470:INFO:Assigning column types.
+2024-08-26 00:05:23,471:INFO:Engine successfully changes for model 'lr' to 'sklearn'.
+2024-08-26 00:05:23,471:INFO:Engine for model 'lasso' has not been set explicitly, hence returning None.
+2024-08-26 00:05:23,474:INFO:Engine for model 'ridge' has not been set explicitly, hence returning None.
+2024-08-26 00:05:23,477:INFO:Engine for model 'en' has not been set explicitly, hence returning None.
+2024-08-26 00:05:23,513:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2024-08-26 00:05:23,541:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2024-08-26 00:05:23,541:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-08-26 00:05:23,541:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-08-26 00:05:23,542:INFO:Engine for model 'lasso' has not been set explicitly, hence returning None.
+2024-08-26 00:05:23,545:INFO:Engine for model 'ridge' has not been set explicitly, hence returning None.
+2024-08-26 00:05:23,548:INFO:Engine for model 'en' has not been set explicitly, hence returning None.
+2024-08-26 00:05:23,588:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2024-08-26 00:05:23,616:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2024-08-26 00:05:23,616:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-08-26 00:05:23,616:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-08-26 00:05:23,616:INFO:Engine successfully changes for model 'lasso' to 'sklearn'.
+2024-08-26 00:05:23,619:INFO:Engine for model 'ridge' has not been set explicitly, hence returning None.
+2024-08-26 00:05:23,621:INFO:Engine for model 'en' has not been set explicitly, hence returning None.
+2024-08-26 00:05:23,658:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2024-08-26 00:05:23,685:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2024-08-26 00:05:23,685:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-08-26 00:05:23,685:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-08-26 00:05:23,689:INFO:Engine for model 'ridge' has not been set explicitly, hence returning None.
+2024-08-26 00:05:23,692:INFO:Engine for model 'en' has not been set explicitly, hence returning None.
+2024-08-26 00:05:23,728:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2024-08-26 00:05:23,756:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2024-08-26 00:05:23,756:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-08-26 00:05:23,756:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-08-26 00:05:23,757:INFO:Engine successfully changes for model 'ridge' to 'sklearn'.
+2024-08-26 00:05:23,763:INFO:Engine for model 'en' has not been set explicitly, hence returning None.
+2024-08-26 00:05:23,799:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2024-08-26 00:05:23,827:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2024-08-26 00:05:23,828:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-08-26 00:05:23,828:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-08-26 00:05:23,834:INFO:Engine for model 'en' has not been set explicitly, hence returning None.
+2024-08-26 00:05:23,873:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2024-08-26 00:05:23,899:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2024-08-26 00:05:23,899:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-08-26 00:05:23,900:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-08-26 00:05:23,900:INFO:Engine successfully changes for model 'en' to 'sklearn'.
+2024-08-26 00:05:23,941:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2024-08-26 00:05:23,968:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2024-08-26 00:05:23,969:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-08-26 00:05:23,969:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-08-26 00:05:24,009:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2024-08-26 00:05:24,038:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2024-08-26 00:05:24,038:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-08-26 00:05:24,038:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-08-26 00:05:24,038:INFO:Engine successfully changes for model 'knn' to 'sklearn'.
+2024-08-26 00:05:24,082:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2024-08-26 00:05:24,110:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-08-26 00:05:24,111:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-08-26 00:05:24,152:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2024-08-26 00:05:24,185:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-08-26 00:05:24,185:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-08-26 00:05:24,186:INFO:Engine successfully changes for model 'svm' to 'sklearn'.
+2024-08-26 00:05:24,257:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-08-26 00:05:24,257:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-08-26 00:05:24,327:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-08-26 00:05:24,328:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-08-26 00:05:24,329:INFO:Preparing preprocessing pipeline...
+2024-08-26 00:05:24,329:INFO:Set up simple imputation.
+2024-08-26 00:05:24,331:INFO:Set up encoding of categorical features.
+2024-08-26 00:05:24,332:INFO:Set up column name cleaning.
+2024-08-26 00:05:24,373:INFO:Finished creating preprocessing pipeline.
+2024-08-26 00:05:24,378:INFO:Pipeline: Pipeline(memory=FastMemory(location=C:\Users\CHAMOD~1\AppData\Local\Temp\joblib),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['Molecular Weight', 'LogP'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['Molecule', 'Smiles'],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('onehot_encoding',
+                 TransformerWrapper(include=['Molecule', 'Smiles'],
+                                    transformer=OneHotEncoder(cols=['Molecule',
+                                                                    'Smiles'],
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True))),
+                ('clean_column_names',
+                 TransformerWrapper(transformer=CleanColumnNames()))])
+2024-08-26 00:05:24,378:INFO:Creating final display dataframe.
+2024-08-26 00:05:24,488:INFO:Setup _display_container:                     Description               Value
+0                    Session id                8531
+1                        Target  Homo-Lumo Gap (eV)
+2                   Target type          Regression
+3           Original data shape             (20, 5)
+4        Transformed data shape            (20, 31)
+5   Transformed train set shape            (14, 31)
+6    Transformed test set shape             (6, 31)
+7              Numeric features                   2
+8          Categorical features                   2
+9                    Preprocess                True
+10              Imputation type              simple
+11           Numeric imputation                mean
+12       Categorical imputation                mode
+13     Maximum one-hot encoding                  25
+14              Encoding method                None
+15               Fold Generator               KFold
+16                  Fold Number                  10
+17                     CPU Jobs                  -1
+18                      Use GPU               False
+19               Log Experiment               False
+20              Experiment Name    reg-default-name
+21                          USI                ab70
+2024-08-26 00:05:24,571:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-08-26 00:05:24,571:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-08-26 00:05:24,641:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-08-26 00:05:24,641:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-08-26 00:05:24,642:INFO:setup() successfully completed in 1.19s...............
+2024-08-26 00:05:24,642:INFO:Initializing compare_models()
+2024-08-26 00:05:24,642:INFO:compare_models(self=<pycaret.regression.oop.RegressionExperiment object at 0x00000227263C6610>, include=['xgboost', 'lightgbm', 'rf', 'br', 'huber', 'ridge', 'lr', 'lasso', 'en', 'par'], exclude=None, fold=None, round=4, cross_validation=True, sort=r2, n_select=1, budget_time=None, turbo=True, errors=ignore, fit_kwargs=None, groups=None, experiment_custom_tags=None, probability_threshold=None, verbose=True, parallel=None, caller_params={'self': <pycaret.regression.oop.RegressionExperiment object at 0x00000227263C6610>, 'include': ['xgboost', 'lightgbm', 'rf', 'br', 'huber', 'ridge', 'lr', 'lasso', 'en', 'par'], 'exclude': None, 'fold': None, 'round': 4, 'cross_validation': True, 'sort': 'r2', 'n_select': 1, 'budget_time': None, 'turbo': True, 'errors': 'ignore', 'fit_kwargs': None, 'groups': None, 'experiment_custom_tags': None, 'engine': None, 'verbose': True, 'parallel': None, '__class__': <class 'pycaret.regression.oop.RegressionExperiment'>})
+2024-08-26 00:05:24,642:INFO:Checking exceptions
+2024-08-26 00:09:19,310:INFO:PyCaret RegressionExperiment
+2024-08-26 00:09:19,310:INFO:Logging name: reg-default-name
+2024-08-26 00:09:19,310:INFO:ML Usecase: MLUsecase.REGRESSION
+2024-08-26 00:09:19,310:INFO:version 3.3.2
+2024-08-26 00:09:19,311:INFO:Initializing setup()
+2024-08-26 00:09:19,311:INFO:self.USI: 3cf8
+2024-08-26 00:09:19,311:INFO:self._variable_keys: {'target_param', 'y_train', 'n_jobs_param', 'exp_id', 'log_plots_param', 'seed', 'fold_groups_param', '_ml_usecase', 'gpu_n_jobs_param', 'y_test', 'X', 'html_param', 'pipeline', 'logging_param', 'X_test', 'fold_shuffle_param', 'y', 'idx', 'X_train', 'transform_target_param', '_available_plots', 'exp_name_log', 'data', 'fold_generator', 'gpu_param', 'memory', 'USI'}
+2024-08-26 00:09:19,311:INFO:Checking environment
+2024-08-26 00:09:19,311:INFO:python_version: 3.11.5
+2024-08-26 00:09:19,311:INFO:python_build: ('tags/v3.11.5:cce6ba9', 'Aug 24 2023 14:38:34')
+2024-08-26 00:09:19,311:INFO:machine: AMD64
+2024-08-26 00:09:19,311:INFO:platform: Windows-10-10.0.22631-SP0
+2024-08-26 00:09:19,315:INFO:Memory: svmem(total=16347844608, available=3027144704, percent=81.5, used=13320699904, free=3027144704)
+2024-08-26 00:09:19,315:INFO:Physical Core: 8
+2024-08-26 00:09:19,316:INFO:Logical Core: 16
+2024-08-26 00:09:19,316:INFO:Checking libraries
+2024-08-26 00:09:19,316:INFO:System:
+2024-08-26 00:09:19,316:INFO:    python: 3.11.5 (tags/v3.11.5:cce6ba9, Aug 24 2023, 14:38:34) [MSC v.1936 64 bit (AMD64)]
+2024-08-26 00:09:19,316:INFO:executable: c:\Users\Chamod Peiris\Documents\GitHub\Projects_24\Cucumines\.venv\Scripts\python.exe
+2024-08-26 00:09:19,316:INFO:   machine: Windows-10-10.0.22631-SP0
+2024-08-26 00:09:19,316:INFO:PyCaret required dependencies:
+2024-08-26 00:09:19,316:INFO:                 pip: 24.2
+2024-08-26 00:09:19,316:INFO:          setuptools: 65.5.0
+2024-08-26 00:09:19,316:INFO:             pycaret: 3.3.2
+2024-08-26 00:09:19,316:INFO:             IPython: 8.26.0
+2024-08-26 00:09:19,316:INFO:          ipywidgets: 8.1.5
+2024-08-26 00:09:19,316:INFO:                tqdm: 4.66.5
+2024-08-26 00:09:19,316:INFO:               numpy: 1.26.4
+2024-08-26 00:09:19,316:INFO:              pandas: 2.1.4
+2024-08-26 00:09:19,316:INFO:              jinja2: 3.1.4
+2024-08-26 00:09:19,316:INFO:               scipy: 1.11.4
+2024-08-26 00:09:19,316:INFO:              joblib: 1.3.2
+2024-08-26 00:09:19,316:INFO:             sklearn: 1.4.2
+2024-08-26 00:09:19,316:INFO:                pyod: 2.0.1
+2024-08-26 00:09:19,316:INFO:            imblearn: 0.12.3
+2024-08-26 00:09:19,316:INFO:   category_encoders: 2.6.3
+2024-08-26 00:09:19,316:INFO:            lightgbm: 4.5.0
+2024-08-26 00:09:19,316:INFO:               numba: 0.60.0
+2024-08-26 00:09:19,316:INFO:            requests: 2.32.3
+2024-08-26 00:09:19,316:INFO:          matplotlib: 3.7.5
+2024-08-26 00:09:19,316:INFO:          scikitplot: 0.3.7
+2024-08-26 00:09:19,316:INFO:         yellowbrick: 1.5
+2024-08-26 00:09:19,316:INFO:              plotly: 5.23.0
+2024-08-26 00:09:19,316:INFO:    plotly-resampler: Not installed
+2024-08-26 00:09:19,316:INFO:             kaleido: 0.2.1
+2024-08-26 00:09:19,316:INFO:           schemdraw: 0.15
+2024-08-26 00:09:19,316:INFO:         statsmodels: 0.14.2
+2024-08-26 00:09:19,316:INFO:              sktime: 0.26.0
+2024-08-26 00:09:19,316:INFO:               tbats: 1.1.3
+2024-08-26 00:09:19,316:INFO:            pmdarima: 2.0.4
+2024-08-26 00:09:19,317:INFO:              psutil: 6.0.0
+2024-08-26 00:09:19,317:INFO:          markupsafe: 2.1.5
+2024-08-26 00:09:19,317:INFO:             pickle5: Not installed
+2024-08-26 00:09:19,317:INFO:         cloudpickle: 3.0.0
+2024-08-26 00:09:19,317:INFO:         deprecation: 2.1.0
+2024-08-26 00:09:19,317:INFO:              xxhash: 3.5.0
+2024-08-26 00:09:19,317:INFO:           wurlitzer: Not installed
+2024-08-26 00:09:19,317:INFO:PyCaret optional dependencies:
+2024-08-26 00:09:19,317:INFO:                shap: Not installed
+2024-08-26 00:09:19,317:INFO:           interpret: Not installed
+2024-08-26 00:09:19,317:INFO:                umap: Not installed
+2024-08-26 00:09:19,317:INFO:     ydata_profiling: Not installed
+2024-08-26 00:09:19,317:INFO:  explainerdashboard: Not installed
+2024-08-26 00:09:19,317:INFO:             autoviz: Not installed
+2024-08-26 00:09:19,317:INFO:           fairlearn: Not installed
+2024-08-26 00:09:19,317:INFO:          deepchecks: Not installed
+2024-08-26 00:09:19,317:INFO:             xgboost: Not installed
+2024-08-26 00:09:19,317:INFO:            catboost: Not installed
+2024-08-26 00:09:19,317:INFO:              kmodes: Not installed
+2024-08-26 00:09:19,317:INFO:             mlxtend: Not installed
+2024-08-26 00:09:19,317:INFO:       statsforecast: Not installed
+2024-08-26 00:09:19,317:INFO:        tune_sklearn: Not installed
+2024-08-26 00:09:19,317:INFO:                 ray: Not installed
+2024-08-26 00:09:19,317:INFO:            hyperopt: Not installed
+2024-08-26 00:09:19,317:INFO:              optuna: Not installed
+2024-08-26 00:09:19,317:INFO:               skopt: Not installed
+2024-08-26 00:09:19,317:INFO:              mlflow: Not installed
+2024-08-26 00:09:19,317:INFO:              gradio: Not installed
+2024-08-26 00:09:19,317:INFO:             fastapi: Not installed
+2024-08-26 00:09:19,317:INFO:             uvicorn: Not installed
+2024-08-26 00:09:19,317:INFO:              m2cgen: Not installed
+2024-08-26 00:09:19,317:INFO:           evidently: Not installed
+2024-08-26 00:09:19,317:INFO:               fugue: Not installed
+2024-08-26 00:09:19,317:INFO:           streamlit: Not installed
+2024-08-26 00:09:19,317:INFO:             prophet: Not installed
+2024-08-26 00:09:19,317:INFO:None
+2024-08-26 00:09:19,317:INFO:Set up data.
+2024-08-26 00:09:19,320:INFO:Set up folding strategy.
+2024-08-26 00:09:19,320:INFO:Set up train/test split.
+2024-08-26 00:09:19,322:INFO:Set up index.
+2024-08-26 00:09:19,322:INFO:Assigning column types.
+2024-08-26 00:09:19,324:INFO:Engine successfully changes for model 'lr' to 'sklearn'.
+2024-08-26 00:09:19,324:INFO:Engine for model 'lasso' has not been set explicitly, hence returning None.
+2024-08-26 00:09:19,327:INFO:Engine for model 'ridge' has not been set explicitly, hence returning None.
+2024-08-26 00:09:19,330:INFO:Engine for model 'en' has not been set explicitly, hence returning None.
+2024-08-26 00:09:19,372:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2024-08-26 00:09:19,401:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2024-08-26 00:09:19,402:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-08-26 00:09:19,402:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-08-26 00:09:19,403:INFO:Engine for model 'lasso' has not been set explicitly, hence returning None.
+2024-08-26 00:09:19,405:INFO:Engine for model 'ridge' has not been set explicitly, hence returning None.
+2024-08-26 00:09:19,408:INFO:Engine for model 'en' has not been set explicitly, hence returning None.
+2024-08-26 00:09:19,444:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2024-08-26 00:09:19,473:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2024-08-26 00:09:19,474:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-08-26 00:09:19,474:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-08-26 00:09:19,474:INFO:Engine successfully changes for model 'lasso' to 'sklearn'.
+2024-08-26 00:09:19,478:INFO:Engine for model 'ridge' has not been set explicitly, hence returning None.
+2024-08-26 00:09:19,481:INFO:Engine for model 'en' has not been set explicitly, hence returning None.
+2024-08-26 00:09:19,525:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2024-08-26 00:09:19,554:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2024-08-26 00:09:19,555:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-08-26 00:09:19,555:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-08-26 00:09:19,560:INFO:Engine for model 'ridge' has not been set explicitly, hence returning None.
+2024-08-26 00:09:19,563:INFO:Engine for model 'en' has not been set explicitly, hence returning None.
+2024-08-26 00:09:19,604:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2024-08-26 00:09:19,639:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2024-08-26 00:09:19,640:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-08-26 00:09:19,640:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-08-26 00:09:19,640:INFO:Engine successfully changes for model 'ridge' to 'sklearn'.
+2024-08-26 00:09:19,647:INFO:Engine for model 'en' has not been set explicitly, hence returning None.
+2024-08-26 00:09:19,684:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2024-08-26 00:09:19,712:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2024-08-26 00:09:19,712:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-08-26 00:09:19,713:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-08-26 00:09:19,719:INFO:Engine for model 'en' has not been set explicitly, hence returning None.
+2024-08-26 00:09:19,755:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2024-08-26 00:09:19,783:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2024-08-26 00:09:19,783:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-08-26 00:09:19,784:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-08-26 00:09:19,784:INFO:Engine successfully changes for model 'en' to 'sklearn'.
+2024-08-26 00:09:19,824:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2024-08-26 00:09:19,851:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2024-08-26 00:09:19,852:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-08-26 00:09:19,852:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-08-26 00:09:19,898:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2024-08-26 00:09:19,925:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2024-08-26 00:09:19,926:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-08-26 00:09:19,926:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-08-26 00:09:19,926:INFO:Engine successfully changes for model 'knn' to 'sklearn'.
+2024-08-26 00:09:19,970:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2024-08-26 00:09:19,997:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-08-26 00:09:19,998:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-08-26 00:09:20,038:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2024-08-26 00:09:20,066:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-08-26 00:09:20,066:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-08-26 00:09:20,066:INFO:Engine successfully changes for model 'svm' to 'sklearn'.
+2024-08-26 00:09:20,135:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-08-26 00:09:20,135:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-08-26 00:09:20,206:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-08-26 00:09:20,206:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-08-26 00:09:20,207:INFO:Preparing preprocessing pipeline...
+2024-08-26 00:09:20,207:INFO:Set up simple imputation.
+2024-08-26 00:09:20,209:INFO:Set up encoding of categorical features.
+2024-08-26 00:09:20,209:INFO:Set up column name cleaning.
+2024-08-26 00:09:20,243:INFO:Finished creating preprocessing pipeline.
+2024-08-26 00:09:20,247:INFO:Pipeline: Pipeline(memory=FastMemory(location=C:\Users\CHAMOD~1\AppData\Local\Temp\joblib),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['Molecular Weight', 'LogP'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['Molecule', 'Smiles'],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('onehot_encoding',
+                 TransformerWrapper(include=['Molecule', 'Smiles'],
+                                    transformer=OneHotEncoder(cols=['Molecule',
+                                                                    'Smiles'],
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True))),
+                ('clean_column_names',
+                 TransformerWrapper(transformer=CleanColumnNames()))])
+2024-08-26 00:09:20,247:INFO:Creating final display dataframe.
+2024-08-26 00:09:20,349:INFO:Setup _display_container:                     Description               Value
+0                    Session id                7132
+1                        Target  Homo-Lumo Gap (eV)
+2                   Target type          Regression
+3           Original data shape             (20, 5)
+4        Transformed data shape            (20, 31)
+5   Transformed train set shape            (14, 31)
+6    Transformed test set shape             (6, 31)
+7              Numeric features                   2
+8          Categorical features                   2
+9                    Preprocess                True
+10              Imputation type              simple
+11           Numeric imputation                mean
+12       Categorical imputation                mode
+13     Maximum one-hot encoding                  25
+14              Encoding method                None
+15               Fold Generator               KFold
+16                  Fold Number                  10
+17                     CPU Jobs                  -1
+18                      Use GPU               False
+19               Log Experiment               False
+20              Experiment Name    reg-default-name
+21                          USI                3cf8
+2024-08-26 00:09:20,444:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-08-26 00:09:20,444:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-08-26 00:09:20,512:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-08-26 00:09:20,512:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-08-26 00:09:20,513:INFO:setup() successfully completed in 1.2s...............
+2024-08-26 00:09:20,513:INFO:Initializing compare_models()
+2024-08-26 00:09:20,513:INFO:compare_models(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000022725FCAC90>, include=['lightgbm', 'rf', 'br', 'huber', 'ridge', 'lr', 'lasso', 'en', 'par'], exclude=None, fold=None, round=4, cross_validation=True, sort=r2, n_select=1, budget_time=None, turbo=True, errors=ignore, fit_kwargs=None, groups=None, experiment_custom_tags=None, probability_threshold=None, verbose=True, parallel=None, caller_params={'self': <pycaret.regression.oop.RegressionExperiment object at 0x0000022725FCAC90>, 'include': ['lightgbm', 'rf', 'br', 'huber', 'ridge', 'lr', 'lasso', 'en', 'par'], 'exclude': None, 'fold': None, 'round': 4, 'cross_validation': True, 'sort': 'r2', 'n_select': 1, 'budget_time': None, 'turbo': True, 'errors': 'ignore', 'fit_kwargs': None, 'groups': None, 'experiment_custom_tags': None, 'engine': None, 'verbose': True, 'parallel': None, '__class__': <class 'pycaret.regression.oop.RegressionExperiment'>})
+2024-08-26 00:09:20,513:INFO:Checking exceptions
+2024-08-26 00:09:20,514:INFO:Preparing display monitor
+2024-08-26 00:09:20,529:INFO:Initializing Light Gradient Boosting Machine
+2024-08-26 00:09:20,529:INFO:Total runtime is 0.0 minutes
+2024-08-26 00:09:20,532:INFO:SubProcess create_model() called ==================================
+2024-08-26 00:09:20,533:INFO:Initializing create_model()
+2024-08-26 00:09:20,533:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000022725FCAC90>, estimator=lightgbm, fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x00000227282D0E50>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-08-26 00:09:20,533:INFO:Checking exceptions
+2024-08-26 00:09:20,533:INFO:Importing libraries
+2024-08-26 00:09:20,533:INFO:Copying training dataset
+2024-08-26 00:09:20,536:INFO:Defining folds
+2024-08-26 00:09:20,536:INFO:Declaring metric variables
+2024-08-26 00:09:20,539:INFO:Importing untrained model
+2024-08-26 00:09:20,541:INFO:Light Gradient Boosting Machine Imported successfully
+2024-08-26 00:09:20,546:INFO:Starting cross validation
+2024-08-26 00:09:20,550:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2024-08-26 00:09:25,756:WARNING:c:\Users\Chamod Peiris\Documents\GitHub\Projects_24\Cucumines\.venv\Lib\site-packages\sklearn\metrics\_regression.py:1187: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-08-26 00:09:25,790:WARNING:c:\Users\Chamod Peiris\Documents\GitHub\Projects_24\Cucumines\.venv\Lib\site-packages\sklearn\metrics\_regression.py:1187: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-08-26 00:09:25,808:WARNING:c:\Users\Chamod Peiris\Documents\GitHub\Projects_24\Cucumines\.venv\Lib\site-packages\sklearn\metrics\_regression.py:1187: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-08-26 00:09:25,923:WARNING:c:\Users\Chamod Peiris\Documents\GitHub\Projects_24\Cucumines\.venv\Lib\site-packages\sklearn\metrics\_regression.py:1187: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-08-26 00:09:25,924:WARNING:c:\Users\Chamod Peiris\Documents\GitHub\Projects_24\Cucumines\.venv\Lib\site-packages\sklearn\metrics\_regression.py:1187: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-08-26 00:09:25,934:WARNING:c:\Users\Chamod Peiris\Documents\GitHub\Projects_24\Cucumines\.venv\Lib\site-packages\sklearn\metrics\_regression.py:1187: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-08-26 00:09:25,947:INFO:Calculating mean and std
+2024-08-26 00:09:25,948:INFO:Creating metrics dataframe
+2024-08-26 00:09:25,951:INFO:Uploading results into container
+2024-08-26 00:09:25,951:INFO:Uploading model into container now
+2024-08-26 00:09:25,952:INFO:_master_model_container: 1
+2024-08-26 00:09:25,952:INFO:_display_container: 2
+2024-08-26 00:09:25,952:INFO:LGBMRegressor(n_jobs=-1, random_state=7132)
+2024-08-26 00:09:25,952:INFO:create_model() successfully completed......................................
+2024-08-26 00:09:26,106:INFO:SubProcess create_model() end ==================================
+2024-08-26 00:09:26,106:INFO:Creating metrics dataframe
+2024-08-26 00:09:26,111:INFO:Initializing Random Forest Regressor
+2024-08-26 00:09:26,111:INFO:Total runtime is 0.09302671750386556 minutes
+2024-08-26 00:09:26,113:INFO:SubProcess create_model() called ==================================
+2024-08-26 00:09:26,114:INFO:Initializing create_model()
+2024-08-26 00:09:26,114:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000022725FCAC90>, estimator=rf, fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x00000227282D0E50>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-08-26 00:09:26,114:INFO:Checking exceptions
+2024-08-26 00:09:26,114:INFO:Importing libraries
+2024-08-26 00:09:26,114:INFO:Copying training dataset
+2024-08-26 00:09:26,117:INFO:Defining folds
+2024-08-26 00:09:26,117:INFO:Declaring metric variables
+2024-08-26 00:09:26,119:INFO:Importing untrained model
+2024-08-26 00:09:26,121:INFO:Random Forest Regressor Imported successfully
+2024-08-26 00:09:26,125:INFO:Starting cross validation
+2024-08-26 00:09:26,126:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2024-08-26 00:09:26,347:WARNING:c:\Users\Chamod Peiris\Documents\GitHub\Projects_24\Cucumines\.venv\Lib\site-packages\sklearn\metrics\_regression.py:1187: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-08-26 00:09:26,350:WARNING:c:\Users\Chamod Peiris\Documents\GitHub\Projects_24\Cucumines\.venv\Lib\site-packages\sklearn\metrics\_regression.py:1187: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-08-26 00:09:26,353:WARNING:c:\Users\Chamod Peiris\Documents\GitHub\Projects_24\Cucumines\.venv\Lib\site-packages\sklearn\metrics\_regression.py:1187: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-08-26 00:09:26,355:WARNING:c:\Users\Chamod Peiris\Documents\GitHub\Projects_24\Cucumines\.venv\Lib\site-packages\sklearn\metrics\_regression.py:1187: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-08-26 00:09:28,204:WARNING:c:\Users\Chamod Peiris\Documents\GitHub\Projects_24\Cucumines\.venv\Lib\site-packages\sklearn\metrics\_regression.py:1187: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-08-26 00:09:28,207:WARNING:c:\Users\Chamod Peiris\Documents\GitHub\Projects_24\Cucumines\.venv\Lib\site-packages\sklearn\metrics\_regression.py:1187: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-08-26 00:09:28,225:INFO:Calculating mean and std
+2024-08-26 00:09:28,226:INFO:Creating metrics dataframe
+2024-08-26 00:09:28,227:INFO:Uploading results into container
+2024-08-26 00:09:28,228:INFO:Uploading model into container now
+2024-08-26 00:09:28,228:INFO:_master_model_container: 2
+2024-08-26 00:09:28,228:INFO:_display_container: 2
+2024-08-26 00:09:28,229:INFO:RandomForestRegressor(n_jobs=-1, random_state=7132)
+2024-08-26 00:09:28,229:INFO:create_model() successfully completed......................................
+2024-08-26 00:09:28,361:INFO:SubProcess create_model() end ==================================
+2024-08-26 00:09:28,361:INFO:Creating metrics dataframe
+2024-08-26 00:09:28,365:INFO:Initializing Bayesian Ridge
+2024-08-26 00:09:28,365:INFO:Total runtime is 0.13058431148529054 minutes
+2024-08-26 00:09:28,368:INFO:SubProcess create_model() called ==================================
+2024-08-26 00:09:28,368:INFO:Initializing create_model()
+2024-08-26 00:09:28,368:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000022725FCAC90>, estimator=br, fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x00000227282D0E50>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-08-26 00:09:28,368:INFO:Checking exceptions
+2024-08-26 00:09:28,368:INFO:Importing libraries
+2024-08-26 00:09:28,368:INFO:Copying training dataset
+2024-08-26 00:09:28,371:INFO:Defining folds
+2024-08-26 00:09:28,371:INFO:Declaring metric variables
+2024-08-26 00:09:28,373:INFO:Importing untrained model
+2024-08-26 00:09:28,375:INFO:Bayesian Ridge Imported successfully
+2024-08-26 00:09:28,380:INFO:Starting cross validation
+2024-08-26 00:09:28,382:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2024-08-26 00:09:28,457:WARNING:c:\Users\Chamod Peiris\Documents\GitHub\Projects_24\Cucumines\.venv\Lib\site-packages\sklearn\metrics\_regression.py:1187: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-08-26 00:09:28,457:WARNING:c:\Users\Chamod Peiris\Documents\GitHub\Projects_24\Cucumines\.venv\Lib\site-packages\sklearn\metrics\_regression.py:1187: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-08-26 00:09:28,457:WARNING:c:\Users\Chamod Peiris\Documents\GitHub\Projects_24\Cucumines\.venv\Lib\site-packages\sklearn\metrics\_regression.py:1187: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-08-26 00:09:28,457:WARNING:c:\Users\Chamod Peiris\Documents\GitHub\Projects_24\Cucumines\.venv\Lib\site-packages\sklearn\metrics\_regression.py:1187: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-08-26 00:09:28,458:WARNING:c:\Users\Chamod Peiris\Documents\GitHub\Projects_24\Cucumines\.venv\Lib\site-packages\sklearn\metrics\_regression.py:1187: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-08-26 00:09:28,458:WARNING:c:\Users\Chamod Peiris\Documents\GitHub\Projects_24\Cucumines\.venv\Lib\site-packages\sklearn\metrics\_regression.py:1187: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-08-26 00:09:28,468:INFO:Calculating mean and std
+2024-08-26 00:09:28,468:INFO:Creating metrics dataframe
+2024-08-26 00:09:28,470:INFO:Uploading results into container
+2024-08-26 00:09:28,470:INFO:Uploading model into container now
+2024-08-26 00:09:28,472:INFO:_master_model_container: 3
+2024-08-26 00:09:28,472:INFO:_display_container: 2
+2024-08-26 00:09:28,472:INFO:BayesianRidge()
+2024-08-26 00:09:28,472:INFO:create_model() successfully completed......................................
+2024-08-26 00:09:28,587:INFO:SubProcess create_model() end ==================================
+2024-08-26 00:09:28,587:INFO:Creating metrics dataframe
+2024-08-26 00:09:28,590:INFO:Initializing Huber Regressor
+2024-08-26 00:09:28,590:INFO:Total runtime is 0.13434321880340577 minutes
+2024-08-26 00:09:28,592:INFO:SubProcess create_model() called ==================================
+2024-08-26 00:09:28,592:INFO:Initializing create_model()
+2024-08-26 00:09:28,594:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000022725FCAC90>, estimator=huber, fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x00000227282D0E50>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-08-26 00:09:28,594:INFO:Checking exceptions
+2024-08-26 00:09:28,594:INFO:Importing libraries
+2024-08-26 00:09:28,594:INFO:Copying training dataset
+2024-08-26 00:09:28,595:INFO:Defining folds
+2024-08-26 00:09:28,595:INFO:Declaring metric variables
+2024-08-26 00:09:28,597:INFO:Importing untrained model
+2024-08-26 00:09:28,599:INFO:Huber Regressor Imported successfully
+2024-08-26 00:09:28,605:INFO:Starting cross validation
+2024-08-26 00:09:28,605:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2024-08-26 00:09:28,661:WARNING:c:\Users\Chamod Peiris\Documents\GitHub\Projects_24\Cucumines\.venv\Lib\site-packages\sklearn\linear_model\_huber.py:342: ConvergenceWarning: lbfgs failed to converge (status=1):
+STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
+
+Increase the number of iterations (max_iter) or scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+  self.n_iter_ = _check_optimize_result("lbfgs", opt_res, self.max_iter)
+
+2024-08-26 00:09:28,661:WARNING:c:\Users\Chamod Peiris\Documents\GitHub\Projects_24\Cucumines\.venv\Lib\site-packages\sklearn\linear_model\_huber.py:342: ConvergenceWarning: lbfgs failed to converge (status=1):
+STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
+
+Increase the number of iterations (max_iter) or scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+  self.n_iter_ = _check_optimize_result("lbfgs", opt_res, self.max_iter)
+
+2024-08-26 00:09:28,661:WARNING:c:\Users\Chamod Peiris\Documents\GitHub\Projects_24\Cucumines\.venv\Lib\site-packages\sklearn\linear_model\_huber.py:342: ConvergenceWarning: lbfgs failed to converge (status=1):
+STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
+
+Increase the number of iterations (max_iter) or scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+  self.n_iter_ = _check_optimize_result("lbfgs", opt_res, self.max_iter)
+
+2024-08-26 00:09:28,661:WARNING:c:\Users\Chamod Peiris\Documents\GitHub\Projects_24\Cucumines\.venv\Lib\site-packages\sklearn\linear_model\_huber.py:342: ConvergenceWarning: lbfgs failed to converge (status=1):
+STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
+
+Increase the number of iterations (max_iter) or scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+  self.n_iter_ = _check_optimize_result("lbfgs", opt_res, self.max_iter)
+
+2024-08-26 00:09:28,667:WARNING:c:\Users\Chamod Peiris\Documents\GitHub\Projects_24\Cucumines\.venv\Lib\site-packages\sklearn\linear_model\_huber.py:342: ConvergenceWarning: lbfgs failed to converge (status=1):
+STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
+
+Increase the number of iterations (max_iter) or scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+  self.n_iter_ = _check_optimize_result("lbfgs", opt_res, self.max_iter)
+
+2024-08-26 00:09:28,667:WARNING:c:\Users\Chamod Peiris\Documents\GitHub\Projects_24\Cucumines\.venv\Lib\site-packages\sklearn\linear_model\_huber.py:342: ConvergenceWarning: lbfgs failed to converge (status=1):
+STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
+
+Increase the number of iterations (max_iter) or scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+  self.n_iter_ = _check_optimize_result("lbfgs", opt_res, self.max_iter)
+
+2024-08-26 00:09:28,668:WARNING:c:\Users\Chamod Peiris\Documents\GitHub\Projects_24\Cucumines\.venv\Lib\site-packages\sklearn\linear_model\_huber.py:342: ConvergenceWarning: lbfgs failed to converge (status=1):
+STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
+
+Increase the number of iterations (max_iter) or scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+  self.n_iter_ = _check_optimize_result("lbfgs", opt_res, self.max_iter)
+
+2024-08-26 00:09:28,668:WARNING:c:\Users\Chamod Peiris\Documents\GitHub\Projects_24\Cucumines\.venv\Lib\site-packages\sklearn\linear_model\_huber.py:342: ConvergenceWarning: lbfgs failed to converge (status=1):
+STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
+
+Increase the number of iterations (max_iter) or scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+  self.n_iter_ = _check_optimize_result("lbfgs", opt_res, self.max_iter)
+
+2024-08-26 00:09:28,678:WARNING:c:\Users\Chamod Peiris\Documents\GitHub\Projects_24\Cucumines\.venv\Lib\site-packages\sklearn\linear_model\_huber.py:342: ConvergenceWarning: lbfgs failed to converge (status=1):
+STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
+
+Increase the number of iterations (max_iter) or scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+  self.n_iter_ = _check_optimize_result("lbfgs", opt_res, self.max_iter)
+
+2024-08-26 00:09:28,680:WARNING:c:\Users\Chamod Peiris\Documents\GitHub\Projects_24\Cucumines\.venv\Lib\site-packages\sklearn\metrics\_regression.py:1187: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-08-26 00:09:28,681:WARNING:c:\Users\Chamod Peiris\Documents\GitHub\Projects_24\Cucumines\.venv\Lib\site-packages\sklearn\metrics\_regression.py:1187: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-08-26 00:09:28,683:WARNING:c:\Users\Chamod Peiris\Documents\GitHub\Projects_24\Cucumines\.venv\Lib\site-packages\sklearn\metrics\_regression.py:1187: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-08-26 00:09:28,684:WARNING:c:\Users\Chamod Peiris\Documents\GitHub\Projects_24\Cucumines\.venv\Lib\site-packages\sklearn\metrics\_regression.py:1187: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-08-26 00:09:28,684:WARNING:c:\Users\Chamod Peiris\Documents\GitHub\Projects_24\Cucumines\.venv\Lib\site-packages\sklearn\metrics\_regression.py:1187: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-08-26 00:09:28,691:WARNING:c:\Users\Chamod Peiris\Documents\GitHub\Projects_24\Cucumines\.venv\Lib\site-packages\sklearn\metrics\_regression.py:1187: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-08-26 00:09:28,695:INFO:Calculating mean and std
+2024-08-26 00:09:28,695:INFO:Creating metrics dataframe
+2024-08-26 00:09:28,696:INFO:Uploading results into container
+2024-08-26 00:09:28,697:INFO:Uploading model into container now
+2024-08-26 00:09:28,697:INFO:_master_model_container: 4
+2024-08-26 00:09:28,697:INFO:_display_container: 2
+2024-08-26 00:09:28,697:INFO:HuberRegressor()
+2024-08-26 00:09:28,697:INFO:create_model() successfully completed......................................
+2024-08-26 00:09:28,811:INFO:SubProcess create_model() end ==================================
+2024-08-26 00:09:28,812:INFO:Creating metrics dataframe
+2024-08-26 00:09:28,816:INFO:Initializing Ridge Regression
+2024-08-26 00:09:28,816:INFO:Total runtime is 0.13811372915903727 minutes
+2024-08-26 00:09:28,819:INFO:SubProcess create_model() called ==================================
+2024-08-26 00:09:28,819:INFO:Initializing create_model()
+2024-08-26 00:09:28,819:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000022725FCAC90>, estimator=ridge, fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x00000227282D0E50>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-08-26 00:09:28,819:INFO:Checking exceptions
+2024-08-26 00:09:28,819:INFO:Importing libraries
+2024-08-26 00:09:28,819:INFO:Copying training dataset
+2024-08-26 00:09:28,821:INFO:Defining folds
+2024-08-26 00:09:28,821:INFO:Declaring metric variables
+2024-08-26 00:09:28,823:INFO:Importing untrained model
+2024-08-26 00:09:28,825:INFO:Ridge Regression Imported successfully
+2024-08-26 00:09:28,830:INFO:Starting cross validation
+2024-08-26 00:09:28,831:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2024-08-26 00:09:28,895:WARNING:c:\Users\Chamod Peiris\Documents\GitHub\Projects_24\Cucumines\.venv\Lib\site-packages\sklearn\metrics\_regression.py:1187: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-08-26 00:09:28,900:WARNING:c:\Users\Chamod Peiris\Documents\GitHub\Projects_24\Cucumines\.venv\Lib\site-packages\sklearn\metrics\_regression.py:1187: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-08-26 00:09:28,900:WARNING:c:\Users\Chamod Peiris\Documents\GitHub\Projects_24\Cucumines\.venv\Lib\site-packages\sklearn\metrics\_regression.py:1187: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-08-26 00:09:28,903:WARNING:c:\Users\Chamod Peiris\Documents\GitHub\Projects_24\Cucumines\.venv\Lib\site-packages\sklearn\metrics\_regression.py:1187: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-08-26 00:09:28,903:WARNING:c:\Users\Chamod Peiris\Documents\GitHub\Projects_24\Cucumines\.venv\Lib\site-packages\sklearn\metrics\_regression.py:1187: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-08-26 00:09:28,903:WARNING:c:\Users\Chamod Peiris\Documents\GitHub\Projects_24\Cucumines\.venv\Lib\site-packages\sklearn\metrics\_regression.py:1187: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-08-26 00:09:28,913:INFO:Calculating mean and std
+2024-08-26 00:09:28,913:INFO:Creating metrics dataframe
+2024-08-26 00:09:28,915:INFO:Uploading results into container
+2024-08-26 00:09:28,915:INFO:Uploading model into container now
+2024-08-26 00:09:28,917:INFO:_master_model_container: 5
+2024-08-26 00:09:28,917:INFO:_display_container: 2
+2024-08-26 00:09:28,917:INFO:Ridge(random_state=7132)
+2024-08-26 00:09:28,917:INFO:create_model() successfully completed......................................
+2024-08-26 00:09:29,031:INFO:SubProcess create_model() end ==================================
+2024-08-26 00:09:29,031:INFO:Creating metrics dataframe
+2024-08-26 00:09:29,035:INFO:Initializing Linear Regression
+2024-08-26 00:09:29,035:INFO:Total runtime is 0.14176046450932822 minutes
+2024-08-26 00:09:29,038:INFO:SubProcess create_model() called ==================================
+2024-08-26 00:09:29,038:INFO:Initializing create_model()
+2024-08-26 00:09:29,038:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000022725FCAC90>, estimator=lr, fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x00000227282D0E50>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-08-26 00:09:29,038:INFO:Checking exceptions
+2024-08-26 00:09:29,038:INFO:Importing libraries
+2024-08-26 00:09:29,038:INFO:Copying training dataset
+2024-08-26 00:09:29,040:INFO:Defining folds
+2024-08-26 00:09:29,040:INFO:Declaring metric variables
+2024-08-26 00:09:29,042:INFO:Importing untrained model
+2024-08-26 00:09:29,044:INFO:Linear Regression Imported successfully
+2024-08-26 00:09:29,049:INFO:Starting cross validation
+2024-08-26 00:09:29,050:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2024-08-26 00:09:29,107:WARNING:c:\Users\Chamod Peiris\Documents\GitHub\Projects_24\Cucumines\.venv\Lib\site-packages\sklearn\metrics\_regression.py:1187: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-08-26 00:09:29,109:WARNING:c:\Users\Chamod Peiris\Documents\GitHub\Projects_24\Cucumines\.venv\Lib\site-packages\sklearn\metrics\_regression.py:1187: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-08-26 00:09:29,110:WARNING:c:\Users\Chamod Peiris\Documents\GitHub\Projects_24\Cucumines\.venv\Lib\site-packages\sklearn\metrics\_regression.py:1187: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-08-26 00:09:29,113:WARNING:c:\Users\Chamod Peiris\Documents\GitHub\Projects_24\Cucumines\.venv\Lib\site-packages\sklearn\metrics\_regression.py:1187: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-08-26 00:09:29,115:WARNING:c:\Users\Chamod Peiris\Documents\GitHub\Projects_24\Cucumines\.venv\Lib\site-packages\sklearn\metrics\_regression.py:1187: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-08-26 00:09:29,115:WARNING:c:\Users\Chamod Peiris\Documents\GitHub\Projects_24\Cucumines\.venv\Lib\site-packages\sklearn\metrics\_regression.py:1187: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-08-26 00:09:29,118:INFO:Calculating mean and std
+2024-08-26 00:09:29,118:INFO:Creating metrics dataframe
+2024-08-26 00:09:29,119:INFO:Uploading results into container
+2024-08-26 00:09:29,120:INFO:Uploading model into container now
+2024-08-26 00:09:29,120:INFO:_master_model_container: 6
+2024-08-26 00:09:29,120:INFO:_display_container: 2
+2024-08-26 00:09:29,120:INFO:LinearRegression(n_jobs=-1)
+2024-08-26 00:09:29,120:INFO:create_model() successfully completed......................................
+2024-08-26 00:09:29,236:INFO:SubProcess create_model() end ==================================
+2024-08-26 00:09:29,237:INFO:Creating metrics dataframe
+2024-08-26 00:09:29,241:INFO:Initializing Lasso Regression
+2024-08-26 00:09:29,241:INFO:Total runtime is 0.14519706169764202 minutes
+2024-08-26 00:09:29,243:INFO:SubProcess create_model() called ==================================
+2024-08-26 00:09:29,243:INFO:Initializing create_model()
+2024-08-26 00:09:29,243:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000022725FCAC90>, estimator=lasso, fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x00000227282D0E50>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-08-26 00:09:29,243:INFO:Checking exceptions
+2024-08-26 00:09:29,243:INFO:Importing libraries
+2024-08-26 00:09:29,243:INFO:Copying training dataset
+2024-08-26 00:09:29,245:INFO:Defining folds
+2024-08-26 00:09:29,245:INFO:Declaring metric variables
+2024-08-26 00:09:29,248:INFO:Importing untrained model
+2024-08-26 00:09:29,250:INFO:Lasso Regression Imported successfully
+2024-08-26 00:09:29,254:INFO:Starting cross validation
+2024-08-26 00:09:29,256:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2024-08-26 00:09:29,315:WARNING:c:\Users\Chamod Peiris\Documents\GitHub\Projects_24\Cucumines\.venv\Lib\site-packages\sklearn\metrics\_regression.py:1187: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-08-26 00:09:29,316:WARNING:c:\Users\Chamod Peiris\Documents\GitHub\Projects_24\Cucumines\.venv\Lib\site-packages\sklearn\metrics\_regression.py:1187: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-08-26 00:09:29,317:WARNING:c:\Users\Chamod Peiris\Documents\GitHub\Projects_24\Cucumines\.venv\Lib\site-packages\sklearn\metrics\_regression.py:1187: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-08-26 00:09:29,318:WARNING:c:\Users\Chamod Peiris\Documents\GitHub\Projects_24\Cucumines\.venv\Lib\site-packages\sklearn\metrics\_regression.py:1187: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-08-26 00:09:29,318:WARNING:c:\Users\Chamod Peiris\Documents\GitHub\Projects_24\Cucumines\.venv\Lib\site-packages\sklearn\metrics\_regression.py:1187: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-08-26 00:09:29,321:WARNING:c:\Users\Chamod Peiris\Documents\GitHub\Projects_24\Cucumines\.venv\Lib\site-packages\sklearn\metrics\_regression.py:1187: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-08-26 00:09:29,324:INFO:Calculating mean and std
+2024-08-26 00:09:29,324:INFO:Creating metrics dataframe
+2024-08-26 00:09:29,325:INFO:Uploading results into container
+2024-08-26 00:09:29,327:INFO:Uploading model into container now
+2024-08-26 00:09:29,327:INFO:_master_model_container: 7
+2024-08-26 00:09:29,327:INFO:_display_container: 2
+2024-08-26 00:09:29,327:INFO:Lasso(random_state=7132)
+2024-08-26 00:09:29,327:INFO:create_model() successfully completed......................................
+2024-08-26 00:09:29,443:INFO:SubProcess create_model() end ==================================
+2024-08-26 00:09:29,443:INFO:Creating metrics dataframe
+2024-08-26 00:09:29,448:INFO:Initializing Elastic Net
+2024-08-26 00:09:29,448:INFO:Total runtime is 0.14863592783610027 minutes
+2024-08-26 00:09:29,450:INFO:SubProcess create_model() called ==================================
+2024-08-26 00:09:29,450:INFO:Initializing create_model()
+2024-08-26 00:09:29,450:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000022725FCAC90>, estimator=en, fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x00000227282D0E50>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-08-26 00:09:29,450:INFO:Checking exceptions
+2024-08-26 00:09:29,451:INFO:Importing libraries
+2024-08-26 00:09:29,451:INFO:Copying training dataset
+2024-08-26 00:09:29,453:INFO:Defining folds
+2024-08-26 00:09:29,453:INFO:Declaring metric variables
+2024-08-26 00:09:29,455:INFO:Importing untrained model
+2024-08-26 00:09:29,457:INFO:Elastic Net Imported successfully
+2024-08-26 00:09:29,461:INFO:Starting cross validation
+2024-08-26 00:09:29,462:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2024-08-26 00:09:29,523:WARNING:c:\Users\Chamod Peiris\Documents\GitHub\Projects_24\Cucumines\.venv\Lib\site-packages\sklearn\metrics\_regression.py:1187: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-08-26 00:09:29,523:WARNING:c:\Users\Chamod Peiris\Documents\GitHub\Projects_24\Cucumines\.venv\Lib\site-packages\sklearn\metrics\_regression.py:1187: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-08-26 00:09:29,526:WARNING:c:\Users\Chamod Peiris\Documents\GitHub\Projects_24\Cucumines\.venv\Lib\site-packages\sklearn\metrics\_regression.py:1187: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-08-26 00:09:29,527:WARNING:c:\Users\Chamod Peiris\Documents\GitHub\Projects_24\Cucumines\.venv\Lib\site-packages\sklearn\metrics\_regression.py:1187: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-08-26 00:09:29,528:WARNING:c:\Users\Chamod Peiris\Documents\GitHub\Projects_24\Cucumines\.venv\Lib\site-packages\sklearn\metrics\_regression.py:1187: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-08-26 00:09:29,530:WARNING:c:\Users\Chamod Peiris\Documents\GitHub\Projects_24\Cucumines\.venv\Lib\site-packages\sklearn\metrics\_regression.py:1187: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-08-26 00:09:29,532:INFO:Calculating mean and std
+2024-08-26 00:09:29,532:INFO:Creating metrics dataframe
+2024-08-26 00:09:29,533:INFO:Uploading results into container
+2024-08-26 00:09:29,534:INFO:Uploading model into container now
+2024-08-26 00:09:29,534:INFO:_master_model_container: 8
+2024-08-26 00:09:29,534:INFO:_display_container: 2
+2024-08-26 00:09:29,534:INFO:ElasticNet(random_state=7132)
+2024-08-26 00:09:29,534:INFO:create_model() successfully completed......................................
+2024-08-26 00:09:29,650:INFO:SubProcess create_model() end ==================================
+2024-08-26 00:09:29,650:INFO:Creating metrics dataframe
+2024-08-26 00:09:29,655:INFO:Initializing Passive Aggressive Regressor
+2024-08-26 00:09:29,655:INFO:Total runtime is 0.1520906726519267 minutes
+2024-08-26 00:09:29,657:INFO:SubProcess create_model() called ==================================
+2024-08-26 00:09:29,657:INFO:Initializing create_model()
+2024-08-26 00:09:29,657:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000022725FCAC90>, estimator=par, fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x00000227282D0E50>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-08-26 00:09:29,657:INFO:Checking exceptions
+2024-08-26 00:09:29,657:INFO:Importing libraries
+2024-08-26 00:09:29,657:INFO:Copying training dataset
+2024-08-26 00:09:29,659:INFO:Defining folds
+2024-08-26 00:09:29,659:INFO:Declaring metric variables
+2024-08-26 00:09:29,661:INFO:Importing untrained model
+2024-08-26 00:09:29,663:INFO:Passive Aggressive Regressor Imported successfully
+2024-08-26 00:09:29,668:INFO:Starting cross validation
+2024-08-26 00:09:29,670:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2024-08-26 00:09:29,729:WARNING:c:\Users\Chamod Peiris\Documents\GitHub\Projects_24\Cucumines\.venv\Lib\site-packages\sklearn\metrics\_regression.py:1187: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-08-26 00:09:29,731:WARNING:c:\Users\Chamod Peiris\Documents\GitHub\Projects_24\Cucumines\.venv\Lib\site-packages\sklearn\metrics\_regression.py:1187: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-08-26 00:09:29,732:WARNING:c:\Users\Chamod Peiris\Documents\GitHub\Projects_24\Cucumines\.venv\Lib\site-packages\sklearn\metrics\_regression.py:1187: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-08-26 00:09:29,736:WARNING:c:\Users\Chamod Peiris\Documents\GitHub\Projects_24\Cucumines\.venv\Lib\site-packages\sklearn\metrics\_regression.py:1187: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-08-26 00:09:29,739:WARNING:c:\Users\Chamod Peiris\Documents\GitHub\Projects_24\Cucumines\.venv\Lib\site-packages\sklearn\metrics\_regression.py:1187: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-08-26 00:09:29,739:WARNING:c:\Users\Chamod Peiris\Documents\GitHub\Projects_24\Cucumines\.venv\Lib\site-packages\sklearn\metrics\_regression.py:1187: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-08-26 00:09:29,749:INFO:Calculating mean and std
+2024-08-26 00:09:29,751:INFO:Creating metrics dataframe
+2024-08-26 00:09:29,752:INFO:Uploading results into container
+2024-08-26 00:09:29,752:INFO:Uploading model into container now
+2024-08-26 00:09:29,752:INFO:_master_model_container: 9
+2024-08-26 00:09:29,752:INFO:_display_container: 2
+2024-08-26 00:09:29,752:INFO:PassiveAggressiveRegressor(random_state=7132)
+2024-08-26 00:09:29,753:INFO:create_model() successfully completed......................................
+2024-08-26 00:09:29,870:INFO:SubProcess create_model() end ==================================
+2024-08-26 00:09:29,870:INFO:Creating metrics dataframe
+2024-08-26 00:09:29,876:WARNING:c:\Users\Chamod Peiris\Documents\GitHub\Projects_24\Cucumines\.venv\Lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py:339: FutureWarning: Styler.applymap has been deprecated. Use Styler.map instead.
+  .applymap(highlight_cols, subset=["TT (Sec)"])
+
+2024-08-26 00:09:29,881:INFO:Initializing create_model()
+2024-08-26 00:09:29,881:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000022725FCAC90>, estimator=LGBMRegressor(n_jobs=-1, random_state=7132), fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=False, predict=False, fit_kwargs={}, groups=None, refit=True, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=None, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-08-26 00:09:29,881:INFO:Checking exceptions
+2024-08-26 00:09:29,882:INFO:Importing libraries
+2024-08-26 00:09:29,882:INFO:Copying training dataset
+2024-08-26 00:09:29,884:INFO:Defining folds
+2024-08-26 00:09:29,885:INFO:Declaring metric variables
+2024-08-26 00:09:29,885:INFO:Importing untrained model
+2024-08-26 00:09:29,885:INFO:Declaring custom model
+2024-08-26 00:09:29,885:INFO:Light Gradient Boosting Machine Imported successfully
+2024-08-26 00:09:29,887:INFO:Cross validation set to False
+2024-08-26 00:09:29,887:INFO:Fitting Model
+2024-08-26 00:09:29,910:INFO:[LightGBM] [Warning] There are no meaningful features which satisfy the provided configuration. Decreasing Dataset parameters min_data_in_bin or min_data_in_leaf and re-constructing Dataset might resolve this warning.
+2024-08-26 00:09:29,911:INFO:[LightGBM] [Warning] Found whitespace in feature_names, replace with underlines
+2024-08-26 00:09:29,911:INFO:[LightGBM] [Info] Total Bins 0
+2024-08-26 00:09:29,911:INFO:[LightGBM] [Info] Number of data points in the train set: 14, number of used features: 0
+2024-08-26 00:09:29,911:INFO:[LightGBM] [Info] Start training from score 2.947357
+2024-08-26 00:09:29,911:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-08-26 00:09:29,912:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-08-26 00:09:29,912:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-08-26 00:09:29,912:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-08-26 00:09:29,912:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-08-26 00:09:29,912:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-08-26 00:09:29,912:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-08-26 00:09:29,912:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-08-26 00:09:29,912:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-08-26 00:09:29,912:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-08-26 00:09:29,912:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-08-26 00:09:29,912:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-08-26 00:09:29,912:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-08-26 00:09:29,912:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-08-26 00:09:29,912:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-08-26 00:09:29,912:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-08-26 00:09:29,913:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-08-26 00:09:29,913:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-08-26 00:09:29,913:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-08-26 00:09:29,913:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-08-26 00:09:29,913:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-08-26 00:09:29,913:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-08-26 00:09:29,913:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-08-26 00:09:29,913:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-08-26 00:09:29,913:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-08-26 00:09:29,913:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-08-26 00:09:29,913:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-08-26 00:09:29,913:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-08-26 00:09:29,913:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-08-26 00:09:29,913:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-08-26 00:09:29,913:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-08-26 00:09:29,913:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-08-26 00:09:29,913:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-08-26 00:09:29,913:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-08-26 00:09:29,913:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-08-26 00:09:29,913:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-08-26 00:09:29,914:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-08-26 00:09:29,914:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-08-26 00:09:29,914:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-08-26 00:09:29,914:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-08-26 00:09:29,914:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-08-26 00:09:29,914:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-08-26 00:09:29,914:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-08-26 00:09:29,914:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-08-26 00:09:29,914:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-08-26 00:09:29,914:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-08-26 00:09:29,914:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-08-26 00:09:29,914:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-08-26 00:09:29,914:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-08-26 00:09:29,914:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-08-26 00:09:29,914:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-08-26 00:09:29,914:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-08-26 00:09:29,914:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-08-26 00:09:29,914:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-08-26 00:09:29,914:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-08-26 00:09:29,914:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-08-26 00:09:29,915:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-08-26 00:09:29,915:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-08-26 00:09:29,915:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-08-26 00:09:29,915:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-08-26 00:09:29,915:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-08-26 00:09:29,915:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-08-26 00:09:29,915:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-08-26 00:09:29,915:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-08-26 00:09:29,915:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-08-26 00:09:29,915:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-08-26 00:09:29,915:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-08-26 00:09:29,915:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-08-26 00:09:29,915:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-08-26 00:09:29,915:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-08-26 00:09:29,915:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-08-26 00:09:29,915:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-08-26 00:09:29,915:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-08-26 00:09:29,915:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-08-26 00:09:29,915:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-08-26 00:09:29,915:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-08-26 00:09:29,915:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-08-26 00:09:29,915:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-08-26 00:09:29,916:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-08-26 00:09:29,916:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-08-26 00:09:29,916:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-08-26 00:09:29,916:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-08-26 00:09:29,916:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-08-26 00:09:29,916:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-08-26 00:09:29,916:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-08-26 00:09:29,917:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-08-26 00:09:29,917:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-08-26 00:09:29,917:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-08-26 00:09:29,917:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-08-26 00:09:29,917:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-08-26 00:09:29,917:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-08-26 00:09:29,917:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-08-26 00:09:29,917:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-08-26 00:09:29,917:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-08-26 00:09:29,917:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-08-26 00:09:29,917:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-08-26 00:09:29,917:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-08-26 00:09:29,917:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-08-26 00:09:29,918:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-08-26 00:09:29,918:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-08-26 00:09:29,920:INFO:LGBMRegressor(n_jobs=-1, random_state=7132)
+2024-08-26 00:09:29,920:INFO:create_model() successfully completed......................................
+2024-08-26 00:09:30,111:INFO:_master_model_container: 9
+2024-08-26 00:09:30,111:INFO:_display_container: 2
+2024-08-26 00:09:30,111:INFO:LGBMRegressor(n_jobs=-1, random_state=7132)
+2024-08-26 00:09:30,111:INFO:compare_models() successfully completed......................................
